@@ -1,0 +1,30 @@
+🚀 다바로 웹사이트 카페24 배포 가이드
+
+== 1단계: 파일 업로드 ==
+1. 이 패키지를 카페24 서버 /home 디렉토리에 업로드
+2. SSH 접속: ssh root@dabaro0432.cafe24.com
+
+== 2단계: 기존 설치 정리 ==
+cd /home
+rm -rf dabaro-website
+tar -xzf [패키지명].tar.gz
+mv [압축해제된폴더명] dabaro-website
+cd dabaro-website
+
+== 3단계: 의존성 설치 및 서버 시작 ==
+chmod +x server-final-fix.sh
+./server-final-fix.sh
+
+== 4단계: 확인 ==
+- PM2 상태: pm2 status
+- 웹사이트: https://dabaro.kr
+- 포트 확인: lsof -i:4000
+
+== 업데이트 내용 ==
+✅ Hero 슬라이더 새 이미지 (hero-image-1,2,3)
+✅ 파트너 로고 실제 이미지 (partner-logo-1~6)
+✅ 이메일 API: webzoro73@gmail.com
+✅ 번역 API: 새로운 DeepL 키 적용
+✅ 최신 데이터베이스 연결 설정
+
+문제 발생 시: 전체 로그를 확인하여 공유

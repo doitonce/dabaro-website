@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /gallery/admin
+Crawl-delay: 1
+
+# Google 봇 전용 설정
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /gallery/admin
+
+# 빙 봇 전용 설정
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /gallery/admin
+
+Sitemap: https://dabaro.kr/sitemap.xml
